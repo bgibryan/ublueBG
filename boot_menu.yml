@@ -1,5 +1,5 @@
 ublue_variants:
-  - label: bgibryan/ublueBG
+  - label: bgibryan/ubluebg
     ks: /kickstart/ublue-os.ks
     flavors:
-      - label: ublueBG
+      - label: ubluebg
