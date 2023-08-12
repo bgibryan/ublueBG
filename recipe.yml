@@ -80,7 +80,7 @@ rpm:
     - gnome-shell-extension-blur-my-shell
     - gnome-shell-extension-pop-shell
     - gnome-shell-extension-system-monitor-applet
-    - gnome-shell-extension-sound-output-device-chooser
+  #  - gnome-shell-extension-sound-output-device-chooser
     - libvirt-daemon-config-network
     - libvirt-daemon-kvm
     - distrobox
