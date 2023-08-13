@@ -67,10 +67,12 @@ rpm:
     - gnome-tweaks
     - nmap
     - vim
-    - thunar
-    - thunar-archive-plugin
-    - thunar-media-tags-plugin
-    - thunar-volman
+    # - thunar
+    # - thunar-archive-plugin
+    # - thunar-media-tags-plugin
+    # - thunar-volman
+    - nemo
+    - nemo-extensions
     # - virt-install
     - virt-manager
     - qemu-kvm
@@ -78,8 +80,9 @@ rpm:
     # - gnome-shell-extension-blur-my-shell
     # - gnome-shell-extension-pop-shell
     # - gnome-shell-extension-system-monitor-applet
-    - libvirt-daemon-config-network
-    - libvirt-daemon-kvm
+    # - libvirt-daemon-config-network
+    # - libvirt-daemon-kvm
+    - libvirt
     - distrobox
     - gparted
     - okular
@@ -138,3 +141,6 @@ firstboot:
     - org.videolan.VLC
 #    - rest.insomnia.Insomnia
     - com.mattjakeman.ExtensionManager
+    - io.github.jonmagon.kdiskmark
+    - org.wireshark.Wireshark
+    - com.discordapp.Discord
