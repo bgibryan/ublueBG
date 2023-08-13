@@ -3,3 +3,6 @@ ublue_variants:
     ks: /kickstart/ublue-os.ks
     flavors:
       - label: ubluebg
+        info: GNOME
+      - label: ubluebk
+        info: PLASMA
