@@ -71,23 +71,18 @@ rpm:
     - thunar-archive-plugin
     - thunar-media-tags-plugin
     - thunar-volman
-    - virt-install
+    # - virt-install
     - virt-manager
-    - virt-top
-    - virt-viewer
     - qemu-kvm
-    - gnome-shell-extension-appindicator
-    - gnome-shell-extension-blur-my-shell
-    - gnome-shell-extension-pop-shell
-    - gnome-shell-extension-system-monitor-applet
-  #  - gnome-shell-extension-sound-output-device-chooser
+    # - gnome-shell-extension-appindicator
+    # - gnome-shell-extension-blur-my-shell
+    # - gnome-shell-extension-pop-shell
+    # - gnome-shell-extension-system-monitor-applet
     - libvirt-daemon-config-network
     - libvirt-daemon-kvm
     - distrobox
     - gparted
-    - kdiskmark
     - okular
-    - wireshark
 
   # These RPMs will be removed from the system image. This step happens during
   # image build, BEFORE installing custom RPMs (from the "rpm.install" category).
