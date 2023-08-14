@@ -14,7 +14,7 @@ base-image: ghcr.io/ublue-os/kinoite-main
 fedora-version: 38
 
 # This description will be visible in the container metadata.
-description: A starting point for further customization of uBlue images. Make your own! https://ublue.it/making-your-own/
+description: A custom uBlue Kinote image. Make your own! https://ublue.it/making-your-own/
 
 # These scripts will be executed during the container build.
 # Place scripts in the "scripts/" dir and put the corresponding filenames here.
@@ -61,31 +61,16 @@ rpm:
     # apps and binaries require it, so it's a good idea to always include it
     # if you ever download or compile any custom software on your machine.
     - libadwaita
-    # Add your own below:
-    # Example:
-    # - tilix
-    # - gnome-tweaks
     - nmap
     - vim
-    # - thunar
-    # - thunar-archive-plugin
-    # - thunar-media-tags-plugin
-    # - thunar-volman
-    # - nemo
-    # - nemo-extensions
-    # - virt-install
     - virt-manager
     - qemu-kvm
-    # - gnome-shell-extension-appindicator
-    # - gnome-shell-extension-blur-my-shell
-    # - gnome-shell-extension-pop-shell
-    # - gnome-shell-extension-system-monitor-applet
     # - libvirt-daemon-config-network
     # - libvirt-daemon-kvm
     - libvirt
     - distrobox
     - gparted
-    # - okular
+    - gnome-disk-utility
 
   # These RPMs will be removed from the system image. This step happens during
   # image build, BEFORE installing custom RPMs (from the "rpm.install" category).
@@ -94,14 +79,13 @@ rpm:
     - firefox
     - firefox-langpacks
     - toolbox
-    # - gnome-shell-extension-background-logo
 
 # Configuration for the "first boot" experience, which is available after login.
 firstboot:
   # Whether to embed "yafti" into the OS image and configure it to autostart,
   # which is the preferred uBlue "first boot" GUI. Set this to "false" if you've
   # decided to use a different solution instead.
-  yafti: false
+  yafti: true
 
   # These Flatpaks will be suggested for install after user login, via the yafti
   # "first boot" GUI. Everything below will be merged into the "yafti.yml" config
