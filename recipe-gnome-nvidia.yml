@@ -1,11 +1,11 @@
 # This file can only be edited inside the uBlue image's git repository.
 
 # The image will be at "ghcr.io/yourusername/name".
-name: ubluebk
+name: ubluebg-n
 
 # The native container image to build on top of.
 # Warning: Non-uBlue images might not work properly, due to missing components.
-base-image: ghcr.io/ublue-os/kinoite-main
+base-image: ghcr.io/ublue-os/silverblue-nvidia
 
 # What Fedora version to use. Use an explicit version or `latest`.
 # If you use `latest`, you will be automatically updated to the next major
@@ -14,7 +14,7 @@ base-image: ghcr.io/ublue-os/kinoite-main
 fedora-version: 38
 
 # This description will be visible in the container metadata.
-description: A custom uBlue Kinote image. Make your own! https://ublue.it/making-your-own/
+description: A custom uBlue Silverblue image. Make your own! https://ublue.it/making-your-own/
 
 # These scripts will be executed during the container build.
 # Place scripts in the "scripts/" dir and put the corresponding filenames here.
@@ -61,16 +61,24 @@ rpm:
     # apps and binaries require it, so it's a good idea to always include it
     # if you ever download or compile any custom software on your machine.
     - libadwaita
+    - gnome-tweaks
     - nmap
     - vim
+    - nemo
+    - nemo-extensions
+    # - virt-install
     - virt-manager
     - qemu-kvm
+    # - gnome-shell-extension-appindicator
+    # - gnome-shell-extension-blur-my-shell
+    # - gnome-shell-extension-pop-shell
+    # - gnome-shell-extension-system-monitor-applet
     # - libvirt-daemon-config-network
     # - libvirt-daemon-kvm
     - libvirt
     - distrobox
     - gparted
-    - gnome-disk-utility
+    - okular
 
   # These RPMs will be removed from the system image. This step happens during
   # image build, BEFORE installing custom RPMs (from the "rpm.install" category).
@@ -79,6 +87,7 @@ rpm:
     - firefox
     - firefox-langpacks
     - toolbox
+    - gnome-shell-extension-background-logo
 
 # Configuration for the "first boot" experience, which is available after login.
 firstboot:
@@ -124,7 +133,7 @@ firstboot:
     - org.signal.Signal
     - org.videolan.VLC
 #    - rest.insomnia.Insomnia
-#    - com.mattjakeman.ExtensionManager
+    - com.mattjakeman.ExtensionManager
     - io.github.jonmagon.kdiskmark
     - org.wireshark.Wireshark
     - com.discordapp.Discord

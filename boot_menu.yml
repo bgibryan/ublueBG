@@ -4,5 +4,7 @@ ublue_variants:
     flavors:
       - label: ubluebg
         info: GNOME
+      - label: ubluebg-n
+        info: GNOME-NVIDIA
       - label: ubluebk
         info: PLASMA
