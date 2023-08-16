@@ -47,9 +47,10 @@ jobs:
       fail-fast: false
       matrix:
         recipe:
-          - recipe.yml
-          - recipe-2.yml
+          - recipe-gnome.yml
           - recipe-gnome-nvidia.yml
+          - recipe-kinoite.yml
+          - recipe-kinoite-nvidia.yml
 
     steps:
       # Checkout push-to-registry action GitHub repository

@@ -8,3 +8,5 @@ ublue_variants:
         info: GNOME-NVIDIA
       - label: ubluebk
         info: PLASMA
+      - label: ubluebk-n
+        info: PLASMA-NVIDIA
