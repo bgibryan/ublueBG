@@ -66,16 +66,19 @@ rpm:
     - vim
     - nemo
     - nemo-extensions
-    # - virt-install
-    - virt-manager
+    - virt-install
+    - libguestfs-tools
+    - python3-libguestfs
+    - virt-top
+    - libvirt-daemon-config-network
+    - libvirt-daemon-kvm
     - qemu-kvm
+    - virt-manager
+    - virt-viewer
     # - gnome-shell-extension-appindicator
     # - gnome-shell-extension-blur-my-shell
     # - gnome-shell-extension-pop-shell
     # - gnome-shell-extension-system-monitor-applet
-    # - libvirt-daemon-config-network
-    # - libvirt-daemon-kvm
-    - libvirt
     - distrobox
     - gparted
     - okular
